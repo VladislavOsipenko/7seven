@@ -62,5 +62,17 @@
             flex-direction: column;
             gap: 5rem;
         }
+        &__container {
+            width: 67.5rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .color {
+        &__container {
+            width: 42.5rem;
+            
+        }
     }
 }

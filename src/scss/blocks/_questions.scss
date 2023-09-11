@@ -1,0 +1,125 @@
+.questions {
+    margin-top: 18rem;
+    margin-bottom: 12rem;
+
+    &__container {
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+        margin-top: 3rem;
+    }
+
+    &__contacts {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction:  column;
+        gap: 1.5rem;
+    }
+
+    &__contacts-email, &__contacts-tel, &__contacts-schedule {
+        p {
+            color: #141518;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.6rem; /* 162.5% */
+            span {
+                color: #141518;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 2.6rem;
+            }
+        }
+        a {
+            color: #141518;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2.6rem;
+            text-decoration: none;
+        }
+    }
+
+    &__contacts-tel {
+    }
+
+    &__contacts-schedule {
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        input {
+            width: 55rem;
+            padding: 10px 5px;
+            color: #8E8E9E;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 137.5% */
+            border: none;
+            border-bottom: 1px solid #8E8E9E;
+        }
+        textarea {
+            width: 55rem;
+            height: 5rem;
+            padding: 10px 5px;
+            color: #8E8E9E;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 137.5% */
+            border: none;
+            border-bottom: 1px solid #8E8E9E;
+            resize: none
+        }
+    }
+
+    &__form-btn {
+    }
+}
+
+@media (max-width: 1024px) {
+    .questions {
+        &__container {
+            width: 67.5rem;
+            
+        }
+        &__form {
+            input, textarea {
+                width: 30rem;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .questions {
+        &__container {
+            width: 42.5rem;
+            
+        }
+        &__wrapper {
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+        }
+        &__form {
+            input, textarea {
+                width: 30rem;
+            }
+        }
+    }
+}

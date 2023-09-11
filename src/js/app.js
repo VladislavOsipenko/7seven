@@ -1,5 +1,7 @@
 import * as flsFunctions from "./modules/functions.js";
+import "./jquery-3.6.3.js";
 import "./slick.min.js";
+
 
 flsFunctions.isWebp();
 
@@ -29,15 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     $('.reviews__slider').slick({
         dots: true,
-        arrows: false,
+        arrows: true,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 3000,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        prevArrow:'<button type="button" class="slick-prev"><img src="img/icon_arrow-left.svg"></button>',
+        nextArrow:'<button type="button" class="slick-next"><img src="img/icon_arrow_right.svg"></button>',
         responsive: [
         ]
-      });
+    });
+    
+
+      
 
 });
