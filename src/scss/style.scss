@@ -1,20 +1,176 @@
 @import "libs/slick";
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+@import "fonts";
 
 * {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Readex Pro', sans-serif;
+    font-family: 'centurygothic_bold', sans-serif;
+    font-family: 'centurygothic', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+html {
+    box-sizing: border-box;
+    font-size: calc(100vw / 1440 * 10);
+    @media (max-width: 1024px) {
+        font-size: calc(100vw / 768 * 10);
+    }
+    @media (max-width: 767px) {
+        font-size: calc(100vw / 500 * 10);
+    }
+    @media (max-width: 500px) {
+        font-size: calc(100vw / 375 * 10);
+    }
+
+}
 
 .container {
-    width: 1140px;
+    width: 114rem;
+    max-width: 93%;
     margin: 0 auto;
+    @media (max-width: 500px) {
+        width: 93%;
+        padding: 0 10px;
+    }
+}
+
+.fz__15-manu {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fz__60 {
+    color: #FFF;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fz__40 {
+    color: #141518;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fz__22 {
+    color: #141518;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+
+.fz__18 {
+    color: #3C4049;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+
+.fz__18-2 {
+    color: #212121;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fz__18-main {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.fz__16 {
+    color: #141518;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem; /* 150% */
+}
+
+.fz__16-2 {
+    color: #333;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.fz__16-3 {
+    color: #141518;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.fz__16-footer {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+
+.fz__14 {
+    color: #141518;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem; /* 171.429% */
+}
+
+.fz__14-footer {
+    color: #9797A2;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.8rem; /* 271.429% */
+}
+
+.fz__100 {
+    color: #E9E9F0;
+    font-size: 10rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 8rem; 
+    letter-spacing: -.1rem;
+}
+
+.button {
+    cursor: pointer;
+    width: 26.3rem;
+    height: 6rem;
+    border-radius: .2rem;
+    border: 1px solid #141518;
+    background: #141518;
+    color: #FFF;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .2s all;
+    &:hover {
+        transform: scale(1.05);
+        transition: .2s all;
+        color: rgb(130, 130, 201);
+    }
 }
 
 @import "blocks/_header";
+@import "blocks/_main";
+@import "blocks/_benefits";
+@import "blocks/_stages";
+@import "blocks/_color";
 
     
 

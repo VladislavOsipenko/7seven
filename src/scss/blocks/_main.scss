@@ -1,0 +1,89 @@
+.main {
+    height: 67.5rem;
+    background: url('../img/main-bg.png') center (center / cover) no-repeat;
+    &__container {
+        width: 100.5rem;
+        height: 100%;
+        position: relative;
+    }
+
+    &__text {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    &__title {
+    }
+
+    &__subtitle {
+        margin-top: 2.6rem;
+    }
+
+    &__call {
+        position: absolute;
+        bottom: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    &__call-phone {
+        width: 6rem;
+        height: 6rem;
+        background: #141518;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+    }
+
+    &__call-btn {
+        cursor: pointer;
+        border: none;
+        width: 16.65rem;
+        height: 4.3rem;
+        flex-shrink: 0;
+        background: #141518;
+        opacity: 0.8;
+        color: #FFF;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.6rem;
+        transition: .2s all;
+        &:hover {
+            transform: scale(1.05);
+            transition: .2s all;
+            color: rgb(130, 130, 201);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        &__container {
+            width: 67.5rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        &__container {
+            width: 42.5rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main {
+
+    }
+    .fz__60 {
+        font-size: 4.7rem;
+    }
+}
