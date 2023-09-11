@@ -136,6 +136,11 @@ html {
     font-weight: 400;
     line-height: 3.8rem; /* 271.429% */
     text-decoration: none;
+    transition: 0.2s all;
+    &:hover {
+        transition: 0.2s all;
+        color: #fff;
+    }
 }
 
 .fz__100 {

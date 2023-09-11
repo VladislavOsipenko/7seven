@@ -73,12 +73,14 @@
         justify-content: space-between;
     }
 }
-.facebook {
+.facebook, .instagram, .telegram{
+    transition: 0.2s all;
+    &:hover {
+        transform: scale(1.10);
+        transition: 0.2s all;
+    }
 }
-.instagram {
-}
-.telegram {
-}
+
 
 @media (max-width: 1024px) {
     .footer {

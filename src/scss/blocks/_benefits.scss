@@ -53,15 +53,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        img {
-            &:nth-child(1) {
-            }
+        picture {
             &:nth-child(2) {
-                position: absolute;
-                transform: translateX(-135px);
+                img {
+                    &:nth-child(1) {
+                    }
+                    &:nth-child(2) {
+                        position: absolute;
+                        transform: translateX(-335px) translateY(-100%);
+                    }
+                    
+                }
             }
             
         }
+        
     }
 
     &__image-taxt {
